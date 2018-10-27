@@ -4,7 +4,7 @@ package com.imooc.passbook.merchants.security;
  * 用ThredLocal去单独存储每一个线程携带的token信息
  */
 public class AccessContext {
-    private static final ThreadLocal<String> token=new ThreadLocal<>();
+    private static final ThreadLocal<String> token=new ThreadLocal<String>();
     public static String getToken(){
         return token.get();
     }

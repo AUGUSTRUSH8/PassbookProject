@@ -18,7 +18,7 @@ public class PassTemplate {
     private String title;
     private String summary;
     private String desc;
-    private String limit;
+    private Long limit;
     private Boolean hasToken;//存储于redis set中
     private Integer background;
     private Date start;
